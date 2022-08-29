@@ -1,0 +1,43 @@
+.contacts {
+    background-color: #094f64;
+}
+
+.contactsBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.title {
+    background-color: gray;
+}
+
+.formBlock {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.formBlock input {
+    margin-bottom: 20px;
+}
+
+.textArea {
+    resize: none;
+    border: 1px solid #71c358;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+.button {
+    width: 150px;
+    background-color: grey;
+    border: 1px solid red;
+    padding: 5px;
+    text-align: center;
+}
+

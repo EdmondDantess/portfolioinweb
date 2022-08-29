@@ -1,0 +1,14 @@
+.mainBlock {
+    min-height: 100vh;
+    background-color: darkblue;
+}
+.text {
+    width: 330px;
+    background-color: aquamarine;
+}
+.photo {
+    width: 300px;
+    height: 400px;
+    background-color: gray;
+}
+
