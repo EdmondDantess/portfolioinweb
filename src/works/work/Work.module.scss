@@ -1,0 +1,75 @@
+@import '../../common/styles/sass/varibles';
+@import '../../common/styles/sass/mixins';
+
+.workBlock {
+  width: 300px;
+  background-color: #577157;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+
+  .imgWork {
+    background-color: $backgroundTextColor;
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+
+    .buttonWatch {
+      background-color: rgba(206, 94, 10, 0.55);
+      width: 33%;
+      text-align: center;
+      @include text($fontForDescriptionTitle, 700, 19px);
+      color: $justBodyTextColor;
+      position: relative;
+      z-index: 1;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: black;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.5;
+    }
+  }
+
+  .footerBlock {
+    width: 90%;
+
+    .title {
+      background-color: dimgrey;
+      border: 1px solid red;
+      position: relative;
+      color: $titleColor;
+      background: #282525;
+      @include text($fontForDescriptionTitle, 700, 19px);
+      text-align: center;
+    }
+
+    .description {
+      border: 1px solid red;
+      margin-bottom: 10px;
+      @include text($fontDescriptionFontDes, 200, 17px);
+      color: $justBodyTextColor;
+    }
+  }
+}
+
+
+
+
+
+
+

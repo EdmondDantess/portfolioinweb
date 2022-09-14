@@ -1,8 +1,8 @@
 .RemoteBlock {
-    background-color: steelblue;
+    background-color: hsl(0, 1%, 16%);
 }
 .hireBlock {
-    min-height: 20vh;
+    min-height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

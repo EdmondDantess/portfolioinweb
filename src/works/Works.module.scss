@@ -1,0 +1,23 @@
+@import '../common/styles/sass/varibles';
+
+.worksBlock {
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 3%);
+
+  .worksContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .myWorks {
+      border: 1px solid red;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      @media screen and (max-width: 755px) {
+        justify-content: center;
+      }
+    }
+  }
+}
+

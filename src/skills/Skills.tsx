@@ -2,12 +2,13 @@ import React from 'react';
 import style from './Skills.module.css';
 import styleContainer from '../common/styles/Container.module.css'
 import Skill from './skill/Skill';
+import Title from '../common/components/title/Title';
 
 const Skills = () => {
     return (
         <div className={style.skillsBlock}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
-                <h2 className={style.title}>Skills</h2>
+             <Title title={'SKILLS'}/>
                 <div className={style.skills}>
                     <Skill title={'Js/Ts'}
                            description={'Lorem dddddddddd dddddddddddddddddddd dddddddd dddddddd dddddddddIpsum has been the industry\'s standard dummy text ever since the 1500s, '}/>

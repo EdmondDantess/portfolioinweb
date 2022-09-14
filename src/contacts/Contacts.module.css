@@ -1,12 +1,12 @@
 .contacts {
-    background-color: #094f64;
+    background-color: hsl(0, 0%, 3%);
 }
 
 .contactsBlock {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 100vh;
+    height: 70vh;
 }
 
 .title {

@@ -1,0 +1,31 @@
+@import '../../styles/sass/varibles';
+
+.title {
+  color: $titleColor;
+  background: $backgroundTextColor;
+  font-family: Rift, sans-serif;;
+  text-transform: uppercase;
+  font-size: 25px;
+  line-height: 1em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  position: relative;
+
+  .title h2 {
+    padding: 0;
+  }
+
+  &::before {
+    content: '';
+    background: $titleColor;
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+}
+
+
+

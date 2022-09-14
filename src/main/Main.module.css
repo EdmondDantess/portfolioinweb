@@ -1,6 +1,6 @@
 .mainBlock {
     min-height: 100vh;
-    background-color: darkblue;
+    background-color: hsl(0, 0%, 3%);
 }
 .text {
     width: 330px;
