@@ -1,0 +1,32 @@
+@import '../common/styles/sass/varibles';
+@import '../common/styles/sass/mixins';
+
+.mainBlock {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .text {
+        width: 330px;
+        color: #390000;
+        @include text($fontForDescriptionTitle, 400, 35px);
+        color: $justBodyTextColor;
+
+    }
+    .photo {
+        width: 300px;
+        height: 400px;
+    }
+    .text  h1 {
+        padding: 0;
+        margin: 0;
+        color: red;
+        font-size: 44px;
+    }
+}
+
+
+
+
+
+

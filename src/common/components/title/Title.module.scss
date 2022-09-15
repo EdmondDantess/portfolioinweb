@@ -3,11 +3,11 @@
 .title {
   color: $titleColor;
   background: $backgroundTextColor;
-  font-family: Rift, sans-serif;;
+  font-family: $fontForDescriptionTitle;
   text-transform: uppercase;
   font-size: 25px;
   line-height: 1em;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 1px;
   position: relative;
 

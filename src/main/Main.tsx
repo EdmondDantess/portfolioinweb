@@ -1,21 +1,23 @@
 import React from 'react';
-import style from './Main.module.css';
+import style from './Main.module.scss';
 import styleContainer from '../common/styles/Container.module.css';
+import avatarka from '../assets/images/avatar.png';
 
 const Main = () => {
+    const avatar = {
+        backgroundImage: `url(${avatarka})`
+    }
     return (
         <div className={style.mainBlock}>
             <div className={styleContainer.container}>
                 <div className={style.text}>
-                    <span>Hi There</span>
-                    <h2>I am</h2>
+                    Hi There I am
                     <h1 className="FullName">
-                        <span className="fname">MAKSIM</span>
-                        <span className="lname"> LAUROUSKI</span>
+                        <span className="fname">MAKSIM LAUROUSKI</span>
                     </h1>
-                    <p>Frontend Developer.</p>
+                    Frontend Developer.
                 </div>
-                <div className={style.photo}></div>
+                <div className={style.photo} style={avatar}></div>
             </div>
         </div>
     );

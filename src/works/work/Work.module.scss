@@ -24,7 +24,7 @@
     position: relative;
 
     .buttonWatch {
-      background-color: rgba(206, 94, 10, 0.55);
+      background-color: rgba(206, 10, 69, 0.55);
       width: 33%;
       text-align: center;
       @include text($fontForDescriptionTitle, 700, 19px);
@@ -49,11 +49,8 @@
     width: 90%;
 
     .title {
-      background-color: dimgrey;
-      border: 1px solid red;
       position: relative;
       color: $titleColor;
-      background: #282525;
       @include text($fontForDescriptionTitle, 700, 19px);
       text-align: center;
     }
