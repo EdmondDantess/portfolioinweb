@@ -2,27 +2,57 @@
 @import '../common/styles/sass/mixins';
 
 .mainBlock {
-    min-height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    .text {
-        width: 330px;
-        color: #390000;
-        @include text($fontForDescriptionTitle, 400, 35px);
-        color: $justBodyTextColor;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  .text {
+    width: 330px;
+    @include text($fontForDescriptionTitle, 400, 35px);
+    color: #390000;
+    animation-name: textAnim;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    @keyframes textAnim {
+      from {
+        text-shadow: 1px 1px 5px white;
+
+      }
+      50% {
+        text-shadow: 1px 1px 5px #390000;
+      }
+      to {
+        text-shadow: 1px 1px 5px hotpink;
+      }
     }
-    .photo {
-        width: 300px;
-        height: 400px;
+  }
+
+  .photo {
+    width: 300px;
+    height: 400px;
+  }
+
+  .text h1 {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 44px;
+    animation-name: textH1;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    @keyframes textH1 {
+      from {
+      }
+      to {
+        transform: scale(1.2);
+      }
     }
-    .text  h1 {
-        padding: 0;
-        margin: 0;
-        color: red;
-        font-size: 44px;
-    }
+  }
 }
 
 

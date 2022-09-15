@@ -5,8 +5,10 @@ import avatarka from '../assets/images/avatar.png';
 
 const Main = () => {
     const avatar = {
-        backgroundImage: `url(${avatarka})`
-    }
+        backgroundImage: `url(${avatarka})`,
+        backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat',
+            }
     return (
         <div className={style.mainBlock}>
             <div className={styleContainer.container}>

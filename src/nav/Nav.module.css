@@ -2,4 +2,9 @@
     width: 300px;
     display: flex;
     justify-content: space-around;
+
+}
+a {
+    color: white;
+    font-weight: bold;
 }

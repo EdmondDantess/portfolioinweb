@@ -12,9 +12,23 @@
 }
 .button {
     width: 150px;
-    background-color: grey;
     border: 1px solid red;
     padding: 5px;
     text-align: center;
+
+
+}
+
+.button{
+    width:100%;
+    white-space:nowrap;
+    font-size:25px;
+    animation: button 14s infinite linear;
+    padding-left:100%;
+}
+
+@keyframes button{
+    0%{transform: translate(0, 0);}
+    100%{transform: translate(-200%, 0)}
 }
 

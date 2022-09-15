@@ -3,12 +3,11 @@
 }
 
 .App {
-    background-color: #920f11;
-
+    background-color: #860a0a;
 }
 
 .backgroundNoise {
-    animation: animate .5s linear infinite;
+    animation: animate 5s linear infinite;
 
 }
 

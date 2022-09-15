@@ -8,6 +8,7 @@ const Header = () => {
             <div className={style.fullName}>MAKSIM LAUROUSKI <hr/></div>
 
             <Nav/>
+
         </div>
     );
 };

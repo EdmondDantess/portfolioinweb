@@ -11,7 +11,7 @@ import backGr from './assets/images/noiseBackground.jpg'
 
 const App = () => {
     const appStyle = {
-        backgroundImage: `url(${backGr})`
+        backgroundImage: `url(${backGr})`,
     }
 
     return (
