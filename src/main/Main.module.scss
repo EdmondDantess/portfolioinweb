@@ -4,11 +4,12 @@
 .mainBlock {
   min-height: 100vh;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-
   .text {
     width: 330px;
+    margin-right: 100px;
     @include text($fontForDescriptionTitle, 400, 35px);
     color: #390000;
     animation-name: textAnim;
@@ -25,8 +26,8 @@
         text-shadow: 1px 1px 5px #e37774;
       }
       50% {
-                text-shadow: 1px 1px 5px rgba(78, 106, 201, 0.88);
-              }
+        text-shadow: 1px 1px 5px rgba(78, 106, 201, 0.88);
+      }
       50% {
         text-shadow: 1px 1px 5px #020202;
       }
@@ -34,31 +35,50 @@
         text-shadow: 1px 1px 5px hotpink;
       }
     }
-  }
 
+    h1 {
+      padding: 0;
+      margin: 0;
+      color: white;
+      font-size: 44px;
+      animation-name: textH1;
+      animation-duration: 20s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      @keyframes textH1 {
+        from {
+        }
+        to {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
   .photo {
     width: 300px;
     height: 400px;
   }
+  .wordsGood {
 
-  .text h1 {
-    padding: 0;
-    margin: 0;
-    color: white;
-    font-size: 44px;
-    animation-name: textH1;
-    animation-duration: 20s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    @keyframes textH1 {
-      from {
-      }
-      to {
-        transform: scale(1.2);
-      }
+    min-height: 70vh;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    font-size: 33px;
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 0;
+    word-break: break-all;
+    @include text($fontForDescriptionTitle, 200, 35px);
+    text-shadow: 1px 1px 5px #390000;
+    .colorW {
+      color:white;
+      text-shadow: 1px 1px 5px red;
     }
   }
+
 }
 
 

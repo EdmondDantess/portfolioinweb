@@ -20,8 +20,9 @@ const App = () => {
             <Header/>
             <Main/>
             <Skills/>
+                <Remote/>
             <Works/>
-            <Remote/>
+
             <Contacts/>
             <Footer/>
             </div>
