@@ -1,14 +1,15 @@
 * {
     box-sizing: border-box;
+
 }
 
 .App {
     background-color: #860a0a;
+    overflow: hidden;
 }
 
 .backgroundNoise {
     animation: animate 5s linear infinite;
-
 }
 
 @keyframes animate {

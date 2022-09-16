@@ -21,8 +21,14 @@
         text-shadow: 1px 1px 5px white;
 
       }
+      25% {
+        text-shadow: 1px 1px 5px #e37774;
+      }
       50% {
-        text-shadow: 1px 1px 5px #390000;
+                text-shadow: 1px 1px 5px rgba(78, 106, 201, 0.88);
+              }
+      50% {
+        text-shadow: 1px 1px 5px #020202;
       }
       to {
         text-shadow: 1px 1px 5px hotpink;

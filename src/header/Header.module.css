@@ -3,7 +3,10 @@
     justify-content: space-around;
     align-items: center;
     height: 50px;
-    border-bottom: 1px solid white;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 1px 1px 5px #622c2c;
 }
 
 .fullName {
