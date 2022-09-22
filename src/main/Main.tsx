@@ -59,7 +59,8 @@ const Main = () => {
         'up to snuff',
     ]
     const [showWords, setShowWords] = useState<string>('GOOD')
-
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    const today =days[new Date().getDay()]
 
    useEffect(()=>{
        setInterval(() => {
@@ -80,7 +81,7 @@ const Main = () => {
                     Frontend Developer.
                 </div>
                 <div className={style.photo} style={avatar}></div>
-                <div className={style.wordsGood}><span>Have a</span><span className={style.colorW}>{showWords}</span>DAY</div>
+                <div className={style.wordsGood}><span>Have a</span><span className={style.colorW}>{showWords}</span>{today}</div>
 
 
         </div>
