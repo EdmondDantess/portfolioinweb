@@ -5,12 +5,12 @@ import Title from '../common/components/title/Title';
 
 const Remote = () => {
     const contackMeText = []
-    for (let i=0; i<555; i++) {
+    for (let i = 0; i < 555; i++) {
         contackMeText.push(` CONTACT ME -`.toUpperCase())
     }
-    let textContact = contackMeText.map( t => {
+    let textContact = contackMeText.map((t, index )=> {
         return (
-            <span>{t}</span>
+            <span key={index}>{t}</span>
         )
     })
     return (
@@ -18,9 +18,11 @@ const Remote = () => {
             <div className={`${styleContainer.container} ${style.hireBlock}`}>
                 <Title title={'I am considering options for remote work'}/>
                 <div className={style.button}>
-                    {textContact}
-                    {textContact}
-                     </div>
+                    <a href="#">
+                        {textContact}
+                        {textContact}
+                    </a>
+                </div>
             </div>
         </div>
     );

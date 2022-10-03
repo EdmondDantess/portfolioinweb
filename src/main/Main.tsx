@@ -10,13 +10,13 @@ const Main = () => {
         backgroundRepeat: 'no-repeat',
     }
 
-    const words = ['excellent',
+    const words = [
+        'excellent',
         'exceptional',
         'favorable',
         'great',
         'marvelous',
         'positive',
-        'satisfactory',
         'satisfying',
         'superb',
         'valuable',
@@ -59,31 +59,35 @@ const Main = () => {
         'up to snuff',
     ]
     const [showWords, setShowWords] = useState<string>('GOOD')
-    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-    const today =days[new Date().getDay()]
+    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+    const today = days[new Date().getDay()]
 
-   useEffect(()=>{
-       setInterval(() => {
-           let i = Math.trunc(+(Math.random().toFixed(2)) * 100)
-           if (i > words.length-1) {
-               i = i - words.length
-           }
-           setShowWords(words[i])
-       }, 6000)
-   }, [])
+    useEffect(() => {
+        setInterval(() => {
+            let i = Math.trunc(+(Math.random().toFixed(2)) * 100)
+            if (i > words.length - 1) {
+                i = i - words.length
+            }
+            setShowWords(words[i])
+        }, 6000)
+    }, [])
     return (
         <div className={style.mainBlock}>
+            <div className={style.classDispayFlex}>
                 <div className={style.text}>
                     Hi There I am
                     <h1 className="FullName">
                         <span className="fname">MAKSIM LAUROUSKI</span>
                     </h1>
-                    Frontend Developer.
+                    Front-End Developer.
                 </div>
                 <div className={style.photo} style={avatar}></div>
-                <div className={style.wordsGood}><span>Have a</span><span className={style.colorW}>{showWords}</span>{today}</div>
-
-
+            </div>
+            <div className={style.wordsGood}>
+                <div>Have a</div>
+                <div
+                    className={style.colorW}>{showWords ? showWords : 'GOOD'}</div>{today}
+            </div>
         </div>
     );
 };

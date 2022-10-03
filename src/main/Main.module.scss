@@ -3,81 +3,96 @@
 
 .mainBlock {
   min-height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  .text {
-    width: 330px;
-    margin-right: 100px;
-    @include text($fontForDescriptionTitle, 400, 35px);
-    color: #390000;
-    animation-name: textAnim;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    @keyframes textAnim {
-      from {
-        text-shadow: 1px 1px 5px white;
+  margin-top: 51px;
 
-      }
-      25% {
-        text-shadow: 1px 1px 5px #e37774;
-      }
-      50% {
-        text-shadow: 1px 1px 5px rgba(78, 106, 201, 0.88);
-      }
-      50% {
-        text-shadow: 1px 1px 5px #020202;
-      }
-      to {
-        text-shadow: 1px 1px 5px hotpink;
-      }
-    }
-
-    h1 {
-      padding: 0;
-      margin: 0;
-      color: white;
-      font-size: 44px;
-      animation-name: textH1;
-      animation-duration: 20s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-      @keyframes textH1 {
-        from {
-        }
-        to {
-          transform: scale(1.2);
-        }
-      }
-    }
-  }
-  .photo {
-    width: 300px;
-    height: 400px;
-  }
   .wordsGood {
-
-    min-height: 70vh;
-    display: flex;
-    align-items: baseline;
-    flex-wrap: nowrap;
+    margin: -50px 0 0 100px;
+    text-align: right;
+    width: 80%;
+       flex-wrap: nowrap;
     font-size: 33px;
     color: red;
     font-weight: bold;
     text-transform: uppercase;
-    width: 0;
     word-break: break-all;
     @include text($fontForDescriptionTitle, 200, 35px);
-    text-shadow: 1px 1px 5px #390000;
+    text-shadow: 1px 1px 5px #3c3b3b;
+    @media screen and (max-width: 729px) {
+      text-align: center;
+    }
+
     .colorW {
-      color:white;
+      color: white;
       text-shadow: 1px 1px 5px red;
     }
   }
+
+  .classDispayFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    .text {
+      width: 330px;
+      margin-right: 100px;
+      @include text($fontForDescriptionTitle, 400, 35px);
+      color: #390000;
+      animation-name: textAnim;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      @keyframes textAnim {
+        from {
+          text-shadow: 1px 1px 5px white;
+
+        }
+        25% {
+          text-shadow: 1px 1px 5px #e37774;
+        }
+        50% {
+          text-shadow: 1px 1px 5px rgba(201, 195, 78, 0.88);
+        }
+        50% {
+          text-shadow: 1px 1px 5px #020202;
+        }
+        to {
+          text-shadow: 1px 1px 5px #972327;
+        }
+      }
+
+      h1 {
+        padding: 0;
+        margin: 0;
+        color: white;
+        font-size: 44px;
+        animation-name: textH1;
+        animation-duration: 20s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        @media screen and (max-width: 802px) {
+          margin: 0 0 0 30px;
+        }
+        @keyframes textH1 {
+          from {
+          }
+          to {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+
+    .photo {
+      width: 300px;
+      height: 400px;
+    }
+
+
+  }
+
 
 }
 

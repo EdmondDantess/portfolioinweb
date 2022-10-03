@@ -3,6 +3,15 @@
 
 }
 
+@font-face {
+    font-family: test;
+    src: url('./../src/assets/fonts/Therace/Therace.ttf');
+}
+h1 {
+    font-family: test;
+    font-weight: 100;
+}
+
 .App {
     background-color: #860a0a;
     overflow: hidden;
