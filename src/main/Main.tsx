@@ -64,10 +64,7 @@ const Main = () => {
 
     useEffect(() => {
         setInterval(() => {
-            let i = Math.trunc(+(Math.random().toFixed(2)) * 100)
-            if (i > words.length - 1) {
-                i = i - words.length
-            }
+            let i = Math.floor(Math.random() * words.length)
             setShowWords(words[i])
         }, 6000)
     }, [])
@@ -86,7 +83,8 @@ const Main = () => {
             <div className={style.wordsGood}>
                 <div>Have a</div>
                 <div
-                    className={style.colorW}>{showWords ? showWords : 'GOOD'}</div>{today}
+                    className={style.colorW}>Have a {showWords ? showWords : 'GOOD'} {today}</div>
+                {today}
             </div>
         </div>
     );
