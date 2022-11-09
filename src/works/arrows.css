@@ -1,0 +1,23 @@
+.strelka-left-2,
+.strelka-right-2 {
+    margin: 20px 8px;
+    width: 80px;
+    height: 80px;
+}
+
+.strelka-left-2 path,
+.strelka-right-2 path {
+    fill: white;
+    stroke-width: .6;
+    stroke: #ce8133;
+    cursor: pointer;
+}
+
+.strelka-left-2 {
+    transform: rotate(180deg);
+}
+
+.strelka-left-2 path:hover,
+.strelka-right-2 path:hover {
+   fill: white;
+}

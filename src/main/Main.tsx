@@ -69,23 +69,29 @@ const Main = () => {
         }, 6000)
     }, [])
     return (
-        <div className={style.mainBlock}>
+        <div className={style.mainBlock} id={'#home'}>
             <div className={style.classDispayFlex}>
                 <div className={style.text}>
                     Hi There I am
                     <h1 className="FullName">
                         <span className="fname">MAKSIM LAUROUSKI</span>
                     </h1>
-                    Front-End Developer.
+                    Front End Developer.
                 </div>
-                <div className={style.photo} style={avatar}></div>
+                <div className={style.photo} style={avatar}>
+
+                </div>
+
             </div>
-            <div className={style.wordsGood}>
-                <div>Have a</div>
-                <div
-                    className={style.colorW}>Have a {showWords ? showWords : 'GOOD'} {today}</div>
-                {today}
+            <div className={style.descriptMain}> Enthusiastic frontend
+                developer with
+                experience in creating SPA using React, Redux, TypeScript. Now I'm improving my skills in this direction and plan to expand them with new
+                technologies.
+                Open to your suggestions.
+                Based in Belarus
+
             </div>
+
         </div>
     );
 };

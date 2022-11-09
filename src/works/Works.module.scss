@@ -3,19 +3,41 @@
 .worksBlock {
   min-height: 100vh;
 
-  .worksContainer {
-    flex-direction: column;
-    justify-content: flex-start;
+  .backDivBlur {
+    min-height: 100vh;
 
-    .myWorks {
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      @media screen and (max-width: 755px) {
+    .worksContainer {
+      min-height: 100vh;
+      min-width: 100vw;
+      backdrop-filter: blur(10px);
+      flex-direction: column;
+      justify-content: flex-start;
+
+      .myWorks {
+        margin-top: 20px;
+        min-width: 100%;
+        display: flex;
         justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        @media screen and (max-width: 755px) {
+          justify-content: center;
+        }
+
+        .Arrow {
+          border: white solid 1px;
+          border-radius: 17px;
+          margin: 5px;
+        }
+
+        .Arrow:hover {
+          cursor: pointer;
+          background-color: rgba(244, 168, 2, 0.32);
+        }
+
       }
     }
+
   }
 }
 

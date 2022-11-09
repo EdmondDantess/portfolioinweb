@@ -1,31 +1,27 @@
 * {
     box-sizing: border-box;
-
 }
 
 @font-face {
-    font-family: test;
-    src: url('./../src/assets/fonts/Therace/Therace.ttf');
+    font-family: bodyText;
+    src: url('./../src/assets/fonts/bodyDes/SYNNova-Regular.otf');
 }
+@font-face {
+    font-family: titleF3d;
+    src: url('./../src/assets/fonts/titleFont/Squad3DRegular.otf');
+}
+@font-face {
+    font-family: titleF;
+    src: url('./../src/assets/fonts/titleFont/PilotCommandLaser.otf');
+}
+
 h1 {
-    font-family: test;
-    font-weight: 100;
+    font-family: titleF3d, serif;
+    font-weight: 480;
 }
 
 .App {
-    background-color: #940606;
+    background-color: #505b46;
     overflow: hidden;
 }
 
-.backgroundNoise {
-    animation: animate 5s linear infinite;
-}
-
-@keyframes animate {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 100% 100%;
-    }
-}

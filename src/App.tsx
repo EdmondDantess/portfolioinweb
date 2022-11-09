@@ -7,23 +7,19 @@ import Works from './works/Works';
 import Remote from './remote/Remote';
 import Contacts from './contacts/Contacts';
 import Footer from './footer/Footer';
-import backGr from './assets/images/noiseBackground.jpg'
 
 const App = () => {
-    const appStyle = {
-        backgroundImage: `url(${backGr})`,
-    }
 
     return (
         <div className="App" >
-            <div className="backgroundNoise" style={appStyle}>
+            <div >
             <Header/>
             <Main/>
             <Skills/>
-                <Remote/>
+              {/*<Remote/>*/}
             <Works/>
 
-            <Contacts/>
+            {/*<Contacts/>*/}
             <Footer/>
             </div>
         </div>

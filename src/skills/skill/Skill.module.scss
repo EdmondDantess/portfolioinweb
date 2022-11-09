@@ -2,22 +2,33 @@
 @import '../../common/styles/sass/mixins';
 
 .skill {
+    border: 3px solid #ce8133;
     width: 250px;
     display: flex;
-    flex-direction: column;
+    justify-content: left;
+    flex-direction: row;
     align-items: center;
     text-align: center;
-    @include text($fontDescriptionFontDes, 200, 17px);
-    color: $justBodyTextColor;
+margin: 10px auto;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 17px;
+    overflow: hidden;
 
     .icon {
+        background-color: white;
+
+        border-radius: 14px;
         height: 60px;
         width: 60px;
-        background-color: gray;
+        img {
+            height: 60px;
+            width: 60px;
+        }
     }
     h3 {
-        @include text($fontForDescriptionTitle, 700, 19px);
-        color: $titleColor;
+        @include text(titleF3d, 700, 19px);
+        color: $justBodyTextColor;
+        margin-left: 20px;
     }
 }
 

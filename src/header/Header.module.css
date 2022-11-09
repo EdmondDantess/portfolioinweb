@@ -1,14 +1,15 @@
 .header {
     display: flex;
     justify-content: space-around;
-    margin-top: -51px;
+    font-family: bodyText, serif;
+    margin-top: 0px;
     align-items: center;
     height: 50px;
     position: fixed;
     width: 100%;
     z-index: 2;
     backdrop-filter: blur(10px);
-    box-shadow: 1px 1px 5px #622c2c;
+    border-bottom: 1px solid #ce8133 ;
 }
 
 .fullName {

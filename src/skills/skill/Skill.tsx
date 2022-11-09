@@ -3,15 +3,16 @@ import style from './Skill.module.scss';
 
 type SkillPropsType = {
     title: string
-    description: string
+    skillIcon: string
 }
 
 const Skill = (props: SkillPropsType) => {
     return (
         <div className={style.skill}>
-            <div className={style.icon}></div>
+            <div className={style.icon}>
+                <img src={props.skillIcon} alt="Skill icon"/>
+            </div>
             <h3>{props.title}</h3>
-            <span className={style.description}>{props.description}</span>
         </div>
     );
 };
