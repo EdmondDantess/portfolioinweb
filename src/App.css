@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+
 @font-face {
     font-family: bodyText;
     src: url('./../src/assets/fonts/bodyDes/SYNNova-Regular.otf');

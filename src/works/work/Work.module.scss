@@ -2,7 +2,7 @@
 @import '../../common/styles/sass/mixins';
 
 .workBlock {
-  width: 600px;
+  max-width: 600px;
   height: 400px;
   background-color: #505b46;
   border: 5px solid #ce8133;
@@ -55,6 +55,12 @@
       @include text(titleF3d, 700, 25px);
       color: $justBodyTextColor;
       position: relative;
+      @media screen and (max-width: 438px) {
+        font-size: 10px;
+      }
+    }
+    .buttonWatch:active {
+      transform: scale(0.5);
     }
     .buttonWatch:hover {
     transform: scale(2);

@@ -3,9 +3,8 @@
 
 .mainBlock {
   min-height: 100vh;
-  margin: 0 auto;
+  margin: auto;
   width: 80%;
-
   .wordsGood {
     text-align: center;
     width: 80%;
@@ -45,6 +44,10 @@
       @media screen and (max-width: 913px) {
       margin-top: 51px;
       }
+      @media screen and (max-width: 434px) {
+      margin-left: 51px;
+        transform: scale(0.8);
+      }
       h1 {
         padding: 0;
         margin: 0;
@@ -57,6 +60,10 @@
         animation-direction: alternate;
         @media screen and (max-width: 802px) {
           margin: 0 0 0 30px;
+        }
+        @media screen and (max-width: 349px) {
+         transform: scale(0.8);
+          margin-left: 17px;
         }
         @keyframes textH1 {
           from {
@@ -71,7 +78,7 @@
     .photo {
       display: flex;
       flex-direction: column;
-      margin-top: 50px;
+      margin-top: 55px;
       width: 300px;
       height: 400px;
     }

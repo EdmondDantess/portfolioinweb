@@ -3,9 +3,12 @@ import style from './Works.module.scss';
 import Work from './work/Work';
 import styleContainer from '../common/styles/Container.module.css'
 import Title from '../common/components/title/Title';
-import socNetImg from '../assets/images/socNetwork.jpg'
-import todoImg from '../assets/images/todoImg.jpg'
+import socNetImg from '../assets/images/screensApp/socnet.png'
+import todoImg from '../assets/images/screensApp/todo.png'
+import counterImg from '../assets/images/screensApp/counter.png'
+import learnPackImg from '../assets/images/screensApp/learnPack.png'
 import './arrows.css'
+import {Fade} from 'react-awesome-reveal';
 
 const socNet = {
     backgroundImage: `url(${socNetImg})`,
@@ -18,7 +21,12 @@ const toDo = {
     backgroundRepeat: 'no-repeat',
 };
 const cards = {
-    backgroundImage: `url(${todoImg})`,
+    backgroundImage: `url(${learnPackImg})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+};
+const counter = {
+    backgroundImage: `url(${counterImg})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
 };
@@ -49,7 +57,7 @@ const workCounter = {
     description: 'It\'s just SPA counter Implemented on Redux. localstorage is used by the Den Abramov method',
     linkGit: 'https://github.com/EdmondDantess/Counter',
     linkSite: '',
-    img: cards,
+    img: counter,
 }
 
 const Works = () => {
@@ -80,10 +88,11 @@ const Works = () => {
     })
 
     return (
-        <div className={style.worksBlock} id={'#projects'}>
+        <div className={style.worksBlock} id={'projects'}>
+
             <div style={myWorks[curVal].img} className={style.backDivBlur}>
                 <div className={`${styleContainer.container} ${style.worksContainer}`}>
-                    <Title title={'MY WORKS'}/>
+                    <Title title={'MY WORKS'}/> <Fade direction={'left'}>
                     <div style={{display: 'flex'}}>  {countSlides}</div>
 
                     <div className={style.myWorks}>
@@ -96,7 +105,7 @@ const Works = () => {
                         <Work title={myWorks[curVal].title}
                               style={myWorks[curVal].img}
                               description={myWorks[curVal].description}
-                        gitLink={myWorks[curVal].linkGit}
+                              gitLink={myWorks[curVal].linkGit}
                         />
                         <div className={style.Arrow} onClick={nextWork}>
                             <svg className="strelka-right-2" viewBox="0 0 9 14">
@@ -105,8 +114,9 @@ const Works = () => {
                             </svg>
                         </div>
                     </div>
-                </div>
+                </Fade></div>
             </div>
+
         </div>
     );
 };

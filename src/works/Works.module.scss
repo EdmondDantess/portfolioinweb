@@ -20,16 +20,21 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        @media screen and (max-width: 755px) {
-          justify-content: center;
+        @media screen and (max-width: 830px) {
+         display: grid;
         }
 
         .Arrow {
           border: white solid 1px;
           border-radius: 17px;
           margin: 5px;
+          @media screen and (max-width: 830px) {
+            text-align: center;
+          }
         }
-
+        .Arrow:active {
+          transform: scale(0.9);
+        }
         .Arrow:hover {
           cursor: pointer;
           background-color: rgba(244, 168, 2, 0.32);

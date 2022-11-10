@@ -15,13 +15,15 @@ import iconRedux from '../assets/images/skills/Redux.svg'
 import iconStorybook from '../assets/images/skills/storybook.png'
 import iconApi from '../assets/images/skills/icons8-api-96.png'
 import iconAxios from '../assets/images/skills/axios.svg'
+import {Fade} from 'react-awesome-reveal';
 
 const Skills = () => {
     return (
-        <div className={style.skillsBlock} id={'#skills'}>
-            <hr/>
+        <div className={style.skillsBlock} id={'skills'}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
+
                 <Title title={'SKILLS'}/>
+                <Fade direction={'down'}>
                 <div className={style.skills}>
                     <Skill title={'REACT'} skillIcon={iconReact}/>
                     <Skill title={'REDUX'} skillIcon={iconRedux}/>
@@ -36,6 +38,7 @@ const Skills = () => {
                     <Skill title={'API'} skillIcon={iconApi}/>
                     <Skill title={'AXIOS'} skillIcon={iconAxios}/>
                 </div>
+            </Fade>
             </div>
         </div>
     );
