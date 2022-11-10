@@ -90,7 +90,7 @@ const Works = () => {
     return (
         <div className={style.worksBlock} id={'projects'}>
 
-            <div style={myWorks[curVal].img} className={style.backDivBlur}>
+            <div style={myWorks[curVal].img ?myWorks[curVal].img :{backgroundColor: 'black'}} className={style.backDivBlur}>
                 <div className={`${styleContainer.container} ${style.worksContainer}`}>
                     <Title title={'MY WORKS'}/> <Fade direction={'left'}>
                     <div style={{display: 'flex'}}>  {countSlides}</div>

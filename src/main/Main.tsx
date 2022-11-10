@@ -38,7 +38,9 @@ const Main = () => {
                     experience in creating SPA using React, Redux, TypeScript. Now I'm improving my skills in this
                     direction and plan to expand them with new
                     technologies.
-                    Open to your suggestions.
+                    Open for your suggestions.
+                    I consider options such as remote work and moving to
+                    another country.
                     Based in Belarus
                 </div>
             </Fade>
