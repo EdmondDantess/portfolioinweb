@@ -2,9 +2,15 @@
     width: 300px;
     display: flex;
     justify-content: space-around;
-
-}
-a {
     color: white;
     font-weight: bold;
 }
+a:hover {
+    cursor: pointer;
+    color: #ce8133;
+}
+
+/*.active {*/
+/*    color: #ce8133;*/
+/*    z-index: 5;*/
+/*}*/

@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-}
 
+}
 
 @font-face {
     font-family: bodyText;
@@ -15,7 +15,6 @@
     font-family: titleF;
     src: url('./../src/assets/fonts/titleFont/PilotCommandLaser.otf');
 }
-
 h1 {
     font-family: titleF3d, serif;
     font-weight: 480;
@@ -24,5 +23,22 @@ h1 {
 .App {
     background-color: #505b46;
     overflow: hidden;
+}
+
+::selection {
+    background: #885028;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    border: 1px solid #885028;
+    background-color: #505b46;
+    overflow: visible;
+}
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: rgba(255, 255, 255, 0.23);
+    border: 1px solid #885028;
+    border-radius: 100px;
 }
 
