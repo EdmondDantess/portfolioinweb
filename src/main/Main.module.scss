@@ -5,6 +5,9 @@
   min-height: 100vh;
   margin: auto;
   width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   .wordsGood {
     text-align: center;
@@ -93,8 +96,9 @@
     margin: -20px auto;
     color: white;
     font-size: 24px;
-    width: 90%;
-    padding: 10px;
+    width: 80%;
+    padding: 20px;
+    text-align: justify;
     border: 1px solid #ce8133;
     border-radius: 30px;
     background-color: rgba(43, 58, 43, 0.16);
